@@ -1,0 +1,66 @@
+# ==============================================================
+# DEMO FILE THREE
+#
+# Created by UMHS_RAD_MR_RESEARCH @ Wed June 07 10:48:43 2017
+# ==============================================================
+#
+# "header" (example): 
+# Gx,y,z = 40/33 mT/m
+# win_low = 0, win_high = 0, win_algo = 0, win_dummy = 2;
+# 0.225 m = R0, lnorm = 4? A(1,0) = B(1,1) = A(1,1) = 0;
+# 0 = CoSyMode, BentBz = 0.175 m;
+#
+# Setting GAP/GRL_1_1-norm = 1; SI_1_0-norm = 1;
+# 
+# NOTE: demo uses different chracteristic radii for Z-coil versus X(RL) and Y(AP):
+# RL is more nonlinear (in order of ".grad"-file)
+#       Rap/Rrl=R0; and Rsi=R0*(R0/BentBz);
+#
+#SPH_REF_RADIUS_IN_MM   = 225.00
+
+SPH_REF_RADIUS_IN_MM_AP = 225.00
+SPH_REF_RADIUS_IN_MM_RL = 225.00
+SPH_REF_RADIUS_IN_MM_SI = 289.2857
+
+GRL_FIELD_S_COEFFS_1_1  = 1.00 
+GRL_FIELD_S_COEFFS_3_1  = -0.155
+GRL_FIELD_S_COEFFS_3_3  = -0.003 
+GRL_FIELD_S_COEFFS_5_1  = -0.04
+GRL_FIELD_S_COEFFS_5_3  = -0.0024
+GRL_FIELD_S_COEFFS_5_5  = -0.0040 
+GRL_FIELD_S_COEFFS_7_1  = 0.02
+GRL_FIELD_S_COEFFS_7_3  = 0.002
+GRL_FIELD_S_COEFFS_7_5  = 0.0001
+GRL_FIELD_S_COEFFS_7_7  = -0.0004 
+GRL_FIELD_S_COEFFS_9_1  = -0.005
+GRL_FIELD_S_COEFFS_9_3  = -0.001
+GRL_FIELD_S_COEFFS_9_7  = 0.0002
+GRL_FIELD_S_COEFFS_9_9  = -0.0001 
+GRL_FIELD_S_COEFFS_11_1  = 0.001
+GRL_FIELD_S_COEFFS_11_3  = 0.0003
+
+GAP_FIELD_C_COEFFS_1_1  = 1.00
+GAP_FIELD_C_COEFFS_3_1  = -0.15
+GAP_FIELD_C_COEFFS_3_3  = -0.005 
+GAP_FIELD_C_COEFFS_5_1  = -0.05
+GAP_FIELD_C_COEFFS_5_3  = 0.004
+GAP_FIELD_C_COEFFS_5_5  = -0.002 
+GAP_FIELD_C_COEFFS_7_1  = 0.025
+GAP_FIELD_C_COEFFS_7_3  = -0.002
+GAP_FIELD_C_COEFFS_7_5  = -0.001
+GAP_FIELD_C_COEFFS_7_7  = 0.0005 
+GAP_FIELD_C_COEFFS_9_1  = -0.006
+GAP_FIELD_C_COEFFS_9_3  = 0.0007
+GAP_FIELD_C_COEFFS_9_5  = 0.0003
+GAP_FIELD_C_COEFFS_9_7  = -0.0001
+GAP_FIELD_C_COEFFS_9_9  = -0.0002 
+GAP_FIELD_C_COEFFS_11_1  = 0.0014
+GAP_FIELD_C_COEFFS_11_3  = -0.0002
+
+GSI_FIELD_C_COEFFS_1_0  = 1.0
+GSI_FIELD_C_COEFFS_3_0  = -0.12 
+GSI_FIELD_C_COEFFS_5_0  = -0.056 
+GSI_FIELD_C_COEFFS_7_0  = 0.025 
+GSI_FIELD_C_COEFFS_9_0  = -0.005
+GSI_FIELD_C_COEFFS_11_0  = 0.0004
+ 
